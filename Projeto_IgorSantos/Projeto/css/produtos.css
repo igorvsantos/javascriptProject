@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+
+.filtro{
+    width: 25%;
+    height: auto;
+    float: left;
+    padding-top: 20px;
+}
+.galeriaProdutos{
+    width: 75%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.gallery-img{
+    padding: 25px;
+    display: inline-block;
+    width: 350px;
+}
+
+.gallery-frame{
+    display: inline-block;
+    position: relative;
+}
+
+.gallery-frame2{
+    text-align: center;
+}
+
+.txtResultados{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+
+.txtGenero{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.btnVerMais{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.btnVerMais:hover {
+    background-color: #242424;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.far{
+    position: absolute;
+    top:0;
+    right: 10px;
+}
+
+.infoProdutos p:nth-child(1){
+    font-size:larger;
+    font-weight: bold;
+}
+
+.infoProdutos p:nth-child(2){
+    font-size:medium;
+}
+
+.infoProdutos p:nth-child(3){
+    font-size:x-large;
+    font-weight: bold;
+}
+
+
+/* Wishlist */
+
+.wishListLinha{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.pos1Wish{
+    text-align: right;
+}
+
+.pos2Wish p:nth-child(1){
+    font-size:x-large;
+    font-weight: bold;
+}
+.pos2Wish p:nth-child(2){
+    font-size:large;
+}
+.pos2Wish p:nth-child(3){
+    font-size:x-large;
+    font-weight: bold;
+}
+
+.pos2Wish{
+    text-align: center;
+}
+
+.pos3Wish{
+    text-align: left;
+}
+
+
+/* lista de filtros */
+.filtro_1{
+    width: 100%;
+    background-color: orangered;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 4px;
+}
+
+.listaFiltro{
+    padding-left: 40%;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+
+/* Administrador */
+.tabelaAdmin{
+    width: 90%;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+#registoProduto{
+    width: 100%;
+    padding-left: 30px;
+}
+#pesquisaAdmin{
+    width: 100%;
+    padding-left: 30px;
+}
+
+
+#btEditar, #btCancelar{
+    display: none;
+}
+
+.alteraDestaque span:hover {
+    cursor: pointer;
+    background-color: #949393;
+    border-radius: 5px;
+}
+
+/* Produto */
+.infoPagProduto{
+    font-size: 1.1rem;
+    font-weight:500;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.infoPagProduto p:nth-child(1){
+    font-size:x-large;
+    font-weight: 300;
+}
+
+.infoPagProduto p:nth-child(2){
+    font-size:x-large;
+    font-weight:300;
+}
+
+.infoPagProduto p:nth-child(3){
+    font-size:large;
+    font-weight: 300;
+}

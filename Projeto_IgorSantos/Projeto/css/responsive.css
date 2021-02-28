@@ -1,0 +1,94 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.thumbnails {
+    width: 70px;
+    height: auto;
+}
+
+@media only screen and (max-width: 980px) {
+
+    /* Wishlist para ipad */
+    .wishListLinha{
+        display: block;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .pos1Wish{
+        text-align: center;
+        margin-left: 22%;
+    }
+    
+    .pos2Wish{
+        text-align: center;
+        margin-left: 30%;
+    }
+    
+    .pos3Wish{
+        text-align: center;
+        margin-left: 30%;
+    }
+
+    /* Produtos para tablet e smarthphone*/
+
+    .filtro{
+        width: 100%;
+        height: auto;
+        float: left;
+        padding-top: 20px;
+    }
+    .galeriaProdutos{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+
+  /* Grelha imagens responsiva para ipad (3 imagens)*/
+    .imagens-area img{
+        height: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    
+    /* Wishlist para smarthphone */
+    .wishListLinha{
+        display: block;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .pos1Wish{   
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+
+    /* Grelha imagens responsiva para telemovel (2 imagens) */
+    .imagens-area img{
+        height: 200px;
+    }
+  }
+
+  /* autenticação */
+  @media only screen and (max-width: 690px) {   
+    .autenticacao{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+  }

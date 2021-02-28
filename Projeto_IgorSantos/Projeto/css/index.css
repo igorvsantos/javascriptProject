@@ -1,0 +1,178 @@
+*{
+    font-family: "Open Sans"
+}
+
+/* 1-Menu */
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor:pointer;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#logoHomePage {
+    height: 50px;
+    /* text-align: center; */
+    /* line-height: normal; */
+
+}
+
+/* 2-Textos */
+
+.txtSaldos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 9vw; /*viewport*/
+    color: white;
+}
+
+.txtDestaques{
+    text-align: center;
+    padding: 20px 0px 20px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* 3-Header e Footer */
+
+header {
+    position: relative;
+    align-items: center;
+    padding: 15px
+    /* text-align: center;
+    padding-top: 10px; */
+}
+
+.container{
+    text-align: center;
+    width: auto;
+}
+.autenticacao{
+    display: inline-block;
+    position: absolute;
+    top:30px;
+    right: 20px;
+    margin-left: auto;
+}
+
+.autenticacao a{
+    color: black;
+}
+
+.autenticacao a:hover{
+    color: red;
+}
+
+/* simulação apenas */
+.autenticado{
+    display: none;
+}
+
+footer {
+    background-color: #e4e4e4;
+    padding: 30px;
+    margin-top: 30px;
+    font-family: "Open Sans";
+    text-align: center;
+    display: inline-block;
+}
+
+.fab{
+    padding: 0px 30px 20px;
+}
+
+.fas{
+    padding: 0px 5px 0px;
+}
+
+.fab:hover, .fas:hover, .fa-star{
+    cursor: pointer;
+}
+
+/* 4-Carrousel */
+
+.carousel-inner{
+    position: relative;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel{
+    padding-top: 20px;
+}
+
+/* 5-Grelha imagens responsiva */
+
+.img-individual{
+    padding:0px;
+}
+
+.img-individual:hover {
+    border: 2px solid red;
+}
+
+.imagens-area{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens-area img{
+    height: 500px;
+}
+
+
+/* 6-Cookies */
+.cookiesTexto{
+     display: none;
+}
+
+.cookiesTexto div{
+    width: 70%;
+    float: left;
+    margin: 30px;
+}
+
+.cookiesTexto button{
+    display: inline-block;
+    margin: 60px;
+    width: 10%;
+}

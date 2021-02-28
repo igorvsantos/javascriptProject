@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/produtos.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <title>H&M</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="dropdown">
+                <button class="dropbtn">Homem</button>
+                <div class="dropdown-content">
+                    <a href="#">Casacos</a>
+                    <a href="#">Camisas</a>
+                    <a href="#">Calças</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Polos</a>
+                    <a href="#">Sapatos</a>
+                    <a href="produtos.html">Todos</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Mulher</button>
+                <div class="dropdown-content">
+                    <a href="#">Vestidos</a>
+                    <a href="#">Blusões</a>
+                    <a href="#">Coletes</a>
+                    <a href="#">Jeans</a>
+                    <a href="#">Saias</a>
+                    <a href="#">Calções</a>
+                    <a href="#">Lingerie</a>
+                    <a href="#">Sapatos</a>
+                    <a href="#">Malas</a>
+                    <a href="#">Todos</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="index.html"><img src="Imagens/logo.png" id="logoHomePage"></a>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Criança</button>
+                <div class="dropdown-content">
+                    <a href="#">Menina | 6-14 Anos</a>
+                    <a href="#">Menino | 6-14 Anos</a>
+                    <a href="#">Bebé Menina | 3 Meses - 5 Anos</a>
+                    <a href="#">Bebé Menino | 3 Meses - 5 Anos</a>
+                    <a href="#">Mini | 0-12 Meses</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Acessórios</button>
+                <div class="dropdown-content">
+                    <a href="#">Malas</a>
+                    <a href="#">Pulseiras</a>
+                    <a href="#">Anéis</a>
+                </div>
+            </div>
+        </nav>
+        <div class="autenticacao">
+            <a href="wishlist.html"><i class="fas fa-star"></i></a>             
+            <i class="fas fa-user"></i>
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+        <!-- simulação apenas -->
+        <div class="autenticado">
+            <i class="fas fa-user-plus"></i>
+            <i class="fas fa-sign-in-alt"></i>  
+        </div>
+    </header>
+    <p class="txtDestaques">Gestão de produtos</p>
+
+    <!-- Formulario -->
+    <form id="registoProduto">
+        <div class="mb-3 row">
+            <label for="nome" class="col-sm-1 col-form-label">Produto:</label>
+            <div class="col-sm-6">
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="marca" class="col-sm-1 col-form-label">Marca:</label>
+            <div class="col-sm-6">
+                <input type="text" id="marca" name="marca" class="form-control" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="tipo_de_produto" class="col-sm-1 col-form-label">Tipo:</label>
+            <div class="col-sm-6">
+                <select id="tipo_de_produto" name="tipo_de_produto" class="form-select " required >
+                    <option value="">-- Seleccionar um tipo de produto --</option>
+                    <option value="Casaco">Casaco</option>
+                    <option value="Camisa">Camisa</option>
+                    <option value="Calças">Calças</option>
+                    <option value="Sweatshirts">Sweatshirts</option>
+                    <option value="Polos">Polos</option>
+                    <option value="Sapatos">Sapatos</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="cor" class="col-sm-1 col-form-label">Cor:</label>
+            <div class="col-sm-6">
+                <input type="text" id="cor" name="cor" class="form-control" required>
+            </div>
+        </div>       
+        <div class="mb-3 row">
+            <label for="Preco" class="col-sm-1 col-form-label">Preço:</label>
+            <div class="col-sm-6">
+                <input type="number" id="preco" name="preco" class="form-control" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="Descricao" class="col-sm-1 col-form-label">Descrição:</label>
+            <div class="col-sm-6">
+                <input type="text" id="descricao" name="descricao" class="form-control" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <div class="form-check form-switch offset-sm-1">
+                <input class="form-check-input" type="checkbox" id="destaque" name="destaque">
+                <label class="form-check-label" for="destaque">Destaque</label>
+            </div>
+        </div>
+        <p><input type="submit" id="btRegistar" value="Inserir produto" class="btn btn-primary"></p>
+        <p><input type="submit" id="btEditar" value="Atualizar produto" class="btn btn-primary"></p>
+        <p><button type="button" id="btCancelar" class="btn btn-danger">Cancelar</button></p>
+        <div class="erroRegisto"></div>
+    </form>
+
+    <!-- Pesquisa -->
+    <div class="mb-3 row" id="pesquisaAdmin">
+        <label for="pesquisa" class="col-sm-1 col-form-label">Pesquisa:</label>
+        <div class="col-sm-6">
+            <input type="text" id="pesquisa" name="pesquisa" class="form-control">
+        </div>
+        <div class="col-sm-5">
+            <input type="button" id="btPesquisa" value="Pesquisa" class="btn btn-primary">&nbsp;<input type="button"
+                id="btLimpaPesquisa" value="Limpar pesquisa" class="btn btn-primary">
+        </div>
+    </div>
+    
+    <!-- Tabela Registos -->
+    <div class="tabelaAdmin">
+    <h3>Lista de Produtos</h3>
+    <table class="table table-striped table-hover table-bordered" id="tabeladados">
+        <thead class="thead-dark">
+            <tr>
+                <th>Foto</th>
+                <th>Foto2</th>
+                <th>Marca</th>
+                <th>Produto</th>
+                <th>Tipo produto</th>
+                <th>Cor</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+                <th>Destaque</th>
+                <th colspan="2">Operações</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>              
+                <td colspan="11">Total de produtos: <span id="totalRegistos"></span></td>
+            </tr>
+        </tfoot>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    
+  
+  <!-- Modal Eliminação Registo -->
+  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModalLabel">Eliminar Produto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Confirma a eliminação do registo?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Sim</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    <footer>
+        <div>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-pinterest-square"></i>
+        </div>
+        O conteúdo deste site está protegido por copyright e é propriedade da H & M Hennes & Mauritz AB. O conceito de
+        negócio da H&M é a oferta de moda e qualidade aos melhores preços, de forma sustentável. Desde que foi fundada,
+        em 1947, a H&M tornou-se uma das maiores empresas de moda do mundo.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
