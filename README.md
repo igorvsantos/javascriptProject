@@ -1,5 +1,5 @@
 # javascriptProject
-This is my first Project made with javascript language.
+This is my first Project made with javascript language. (online shop H&M style)
 
 I´m using a REST API and if you want to try it follow the steps below before open index.html page:
   -Open Visual Studio Code or similar;
